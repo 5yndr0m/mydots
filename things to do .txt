@@ -1,0 +1,22 @@
+#run update
+sudo pacman -Syu
+
+#install git
+sudo pacman -S --needed base-devel git
+
+#clone yay repo
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay --version
+
+#hyprland setup
+sudo yay -S hyprland-git
+
+#end4s repo
+#use this: less hassel.
+bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
+
+#more tools that works well with hyprland
+https://github.com/hyprland-community/awesome-hyprland
+
