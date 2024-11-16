@@ -13,27 +13,40 @@ dotfile collection for later use
 
 * using <a href="https://github.com/stonecrusher/simpleMenuWizard">simpleMenuWizard</a> by <a href="https://github.com/stonecrusher">@stonecrusher</a>.
 
-currently no bugy behaviour detected!
-
-## To add
-
 * console
-    - fastfetch
-    - fzf
-    - bat
-    - thefuck
-    - starship
+
+    ```bash
+        sudo pacman -S --needed base-devel git
+    ```
+    
+    - clone yay repo
+    ```bash
+        git clone https://aur.archlinux.org/yay.git
+        cd yay
+        makepkg -si
+        yay --version
+    ```
+    
+    ```bash
+      bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
+    ```
+
+    ```bash
+        sudo pacman -S bat fastfetch thefuck fzf lazygit
+    ```
+    
     - atuin
-
-* blackbox
-* codium
-* spotify
-
-## from scrath stuff
-
-* rofi
-* hyprlanf
-* gbar
-* swaylock
-
-... basically a full hyprland system need to create from scrath....
+    ```bash
+         curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+    ```
+    
+    - tlrc
+    ```bash
+        yay -S tlrc-bin cava
+    ```
+    - zed
+    ```bash
+        curl -f https://zed.dev/install.sh | sh
+    ```
+    
+    
