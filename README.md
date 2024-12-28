@@ -40,18 +40,6 @@ makepkg -si
 yay --version
 ```
 
-### Core Utilities
-```bash
-# Install fundamental utilities
-sudo pacman -S bat fastfetch thefuck fzf lazygit
-```
-
-### System Maintenance
-```bash
-# Install system maintenance tools
-yay -S tlrc-bin cava
-```
-
 ### Development Environment
 ```bash
 # Install Zed editor
@@ -63,7 +51,7 @@ curl -f https://zed.dev/install.sh | sh
 ### Theme and Visual Components
 ```bash
 yay -S tela-circle-icon-theme vimix-cursors gtk-engine-murrine orchis-theme \
-    python-pywalfox libnotify ttf-firacoda ttf-firacode-nerd
+    python-pywalfox libnotify ttf-firacoda ttf-firacode-nerd cava
 ```
 
 ### Hyprland and Related Packages
@@ -79,7 +67,10 @@ yay -S hyprcursor-git hyprutils-git hyprlang-git hyprland-qtutils \
 yay -S network-manager-applet overskride blueberry-wayland \
     nautilus-open-any-terminal nautilus-admin nautilus-image-converter \
     cliphist rofi-wayland waypaper atuin python-pywal16 grimblast \
-    tesseract ttf-material-symbols-variable-git wlogout sharik-bin
+    tesseract ttf-material-symbols-variable-git wlogout sharik-bin tlrc-bin
+```
+```bash
+sudo pacman -S bat fastfetch thefuck fzf lazygit
 ```
 
 ### Development Tools and Dependencies
