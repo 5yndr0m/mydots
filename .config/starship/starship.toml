@@ -1,0 +1,48 @@
+"$schema" = "https://starship.rs/config-schema.json"
+add_newline = true
+format = "$cmd_duration $username $directory\n$character\n"
+right_format = "$git_branch $git_state $git_metrics $git_status\n"
+
+[character]
+success_symbol = "[•\uf444 \uf0a9](bold fg:#036E5F) "
+error_symbol = "[•\uf444 \U000f0159](bold fg:#024F4F) "
+
+[package]
+disabled = true
+
+[cmd_duration]
+min_time = 0
+format = "[ $duration](bold fg:#4D756B)"
+
+[directory]
+home_symbol = " \uf46d "
+read_only = " \uf456 "
+style = "fg:#036E5F"
+truncation_length = 6
+truncation_symbol = "••/"
+format = "[$path ]($style)"
+
+[username]
+style_user = "bold fg:#04A588"
+style_root = "fg:#024F4F bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[git_branch]
+style = "bg:#036E5F"
+symbol = "\U000f062c"
+truncation_length = 4
+truncation_symbol = ""
+format = "[$symbol $branch(:$remote_branch)](fg:#036E5F)"
+
+[git_metrics]
+disabled = false
+
+[directory.substitutions]
+Desktop = " \uf4a9 "
+Documents = " \uf4a5 "
+Downloads = " \uf409 "
+Music = " \U000f0388 "
+Pictures = " \uf40f "
+Videos = " \uf52c "
